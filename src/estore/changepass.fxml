@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estore.ChangepassController">
+   <children>
+      <Pane prefHeight="56.0" prefWidth="492.0" style="-fx-background-color: #3BB9FF; -fx-border-color: #37474f; -fx-border-width: 0 0 3 0; -fx-border-style: solid;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="144.0" layoutY="15.0" prefHeight="29.0" prefWidth="212.0" text="change password">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="4.0" layoutY="69.0" prefHeight="239.0" prefWidth="483.0" spacing="10.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="69.0">
+         <children>
+            <HBox prefHeight="67.0" prefWidth="455.0" spacing="50.0">
+               <children>
+                  <Label fx:id="lbluserid" prefHeight="20.0" prefWidth="83.0" text="UserId" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <TextField fx:id="txtuserid" prefHeight="26.0" prefWidth="301.0" promptText="UserId" />
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="67.0" prefWidth="455.0" spacing="50.0">
+               <children>
+                  <Label fx:id="lblusername" prefHeight="20.0" prefWidth="83.0" text="UserName" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <TextField fx:id="txtusername" prefHeight="26.0" prefWidth="301.0" promptText="UserName" />
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="67.0" prefWidth="455.0" spacing="50.0">
+               <children>
+                  <Label fx:id="lbloldpass" prefHeight="20.0" prefWidth="83.0" text="OldPassword" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <TextField fx:id="txtoldpass" prefHeight="26.0" prefWidth="301.0" promptText="old Password" />
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="67.0" prefWidth="455.0" spacing="50.0">
+               <children>
+                  <Label fx:id="newpassword" prefHeight="20.0" prefWidth="83.0" text="newpassword" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <TextField fx:id="txtnewpass" prefHeight="26.0" prefWidth="301.0" promptText="newpassword" />
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </HBox>
+            <Separator prefHeight="0.0" prefWidth="448.0" />
+            <HBox prefHeight="71.0" prefWidth="483.0" spacing="130.0">
+               <children>
+                  <Button fx:id="btnchangepass" mnemonicParsing="false" prefHeight="28.0" prefWidth="72.0" text="Change">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btncancel" mnemonicParsing="false" text="Cancel">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

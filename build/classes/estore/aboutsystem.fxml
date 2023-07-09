@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estore.AboutSystemController">
+   <children>
+      <Pane prefHeight="56.0" prefWidth="553.0" style="-fx-background-color: #3BB9FF; -fx-border-color: #37474f; -fx-border-width: 0 0 3 0; -fx-border-style: solid;">
+         <children>
+            <Label layoutX="186.0" layoutY="14.0" prefHeight="29.0" prefWidth="165.0" text="About System">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnexit" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" text="&lt;---">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Text layoutX="61.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="انا الطالب ضياء سامي الحرازين صاحب الرقم الاكاديمي  1301203975" wrappingWidth="404.53672790527344">
+         <font>
+            <Font name="Segoe UI Black Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="61.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="قمت بعمل مشروع عبارة عن متجر إلكتروني " textAlignment="RIGHT" wrappingWidth="394.13670349121094">
+         <font>
+            <Font name="Segoe UI Black Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="المشروع عبارة عن متجر مبيعات لشركة معينة " textAlignment="RIGHT" wrappingWidth="394.13670349121094">
+         <font>
+            <Font name="Segoe UI Black Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="65.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="يوجد في هذا النظام أدمن ويتحكم الأدمن بإضافة مستخدمين لهذا النظام " textAlignment="RIGHT" wrappingWidth="394.13670349121094">
+         <font>
+            <Font name="Segoe UI Black Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="64.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="يستطيع الأدمن ايضا عرض جميع مبيعات جميع المستخدمين ولكن لا يستطيع إضافة مبيعات" textAlignment="RIGHT" wrappingWidth="394.13670349121094">
+         <font>
+            <Font name="Segoe UI Black Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="64.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="بينما المستخدم العادي يستطيع تغيير كلمة المرور الخاصة به ويستطيع إضافة مبيعات ويستطيع عرض المبيعات الخاصة به فقط" textAlignment="RIGHT" wrappingWidth="394.13670349121094">
+         <font>
+            <Font name="Segoe UI Black Italic" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

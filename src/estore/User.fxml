@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="710.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estore.UserController">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="70.0" prefWidth="850.0" style="-fx-background-color: #3BB9FF; -fx-border-color: #37474f; -fx-border-width: 0 0 3 0; -fx-border-style: solid;">
+         <children>
+            <Button fx:id="btnabout" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="50.0" text="?">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblnameuser" layoutX="119.0" layoutY="18.0" prefHeight="36.0" prefWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnchangepass" layoutX="324.0" layoutY="24.0" mnemonicParsing="false" text="ChangePassWord">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="665.0" layoutY="22.0" text="Products">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnsearch" layoutX="785.0" layoutY="25.0" mnemonicParsing="false" text="Search">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lbluserid" layoutX="270.0" layoutY="26.0" prefHeight="26.0" prefWidth="43.0" />
+         </children>
+      </Pane>
+      <VBox focusTraversable="true" layoutX="6.0" layoutY="82.0" prefHeight="598.0" prefWidth="233.0" spacing="15.0" style="-fx-border-color: #616161; -fx-border-style: solid; -fx-border-width: 0.25;">
+         <children>
+            <Label fx:id="txtuserid" prefHeight="18.0" prefWidth="50.0" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="95.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtidprod" prefHeight="26.0" prefWidth="192.0" promptText="رقم المنتج">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtnameprod" prefHeight="26.0" prefWidth="192.0" promptText="اسم المنتج">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtaddressprod" prefHeight="26.0" prefWidth="192.0" promptText="عنوان المنتج على الويب">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </TextField>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="139.0" prefWidth="218.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="imageview" fitHeight="150.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="btnloadimage" mnemonicParsing="false" prefHeight="78.0" prefWidth="72.0" text="حمل الصورة" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <DatePicker fx:id="datepicprod" prefHeight="26.0" prefWidth="216.0" promptText="تاريخ الإنتاج" />
+            <TextField fx:id="txtprice" prefHeight="26.0" prefWidth="192.0" promptText="السعر">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="compo" prefHeight="26.0" prefWidth="217.0" promptText="العملة" />
+            <TextField fx:id="txtQuantity" prefHeight="26.0" prefWidth="192.0" promptText="الكمية">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="14.0" />
+               </font>
+            </TextField>
+            <Separator prefWidth="200.0" />
+            <Label fx:id="txttotal" prefHeight="18.0" prefWidth="50.0" text="0" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="95.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+      <TableView fx:id="tableview" layoutX="248.0" layoutY="82.0" onMouseClicked="#handleMouseAction" prefHeight="505.0" prefWidth="594.0">
+         <columns>
+            <TableColumn fx:id="colidprod" prefWidth="84.79998779296875" text="رقم المنتج" />
+            <TableColumn fx:id="colname" prefWidth="90.39993286132812" text="اسم المنتج" />
+            <TableColumn fx:id="coldate" prefWidth="103.19998168945312" text="تاريخ الإنتاج" />
+            <TableColumn fx:id="colprice" prefWidth="83.199951171875" text="السعر" />
+            <TableColumn fx:id="colcurrncy" prefWidth="72.7999267578125" text="العملة" />
+            <TableColumn fx:id="colquantity" prefWidth="83.20010375976562" text="الكمية" />
+            <TableColumn fx:id="coltotal" prefWidth="75.0" text="الإجمالي" />
+         </columns>
+      </TableView>
+      <Separator layoutX="275.0" layoutY="601.0" prefHeight="3.0" prefWidth="546.0" style="-fx-background-color: black;" />
+      <HBox layoutX="303.0" layoutY="598.0" prefHeight="45.0" prefWidth="498.0" spacing="80.0">
+         <children>
+            <Label fx:id="lbladdress2222" prefHeight="50.0" prefWidth="305.0" text="عنوان المنتج على الويب">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnweb" mnemonicParsing="false" prefHeight="28.0" prefWidth="253.0" text="إضغط هنا" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="180.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator layoutX="274.0" layoutY="642.0" prefHeight="3.0" prefWidth="546.0" style="-fx-background-color: black;" />
+      <HBox layoutX="360.0" layoutY="647.0" prefHeight="66.0" prefWidth="488.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnsave" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="حفظ" textFill="#036300">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btndelete" layoutX="30.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="حذف" textFill="#890606">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnnew" layoutX="100.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="جديد" textFill="#030303">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnexit" layoutX="171.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="خروج" textFill="#890606">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
